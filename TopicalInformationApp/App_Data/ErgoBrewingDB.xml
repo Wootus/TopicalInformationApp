@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Recipes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Recipe>
+		<Id>1</Id>
+		<Name>Wheaty Warrior</Name>
+		<Style>IPA</Style>
+		<PercentABV>6.5</PercentABV>
+		<IBU>65</IBU>
+		<GrainAdditions>10# Base Pale Malt</GrainAdditions>
+		<HopAdditions>1oz. US Warrior</HopAdditions>
+		<SampleImagePath></SampleImagePath>
+	</Recipe>
+	<Recipe>
+		<Id>2</Id>
+		<Name>Ergo IPA</Name>
+		<Style>IPA</Style>
+		<PercentABV>7</PercentABV>
+		<IBU>77</IBU>
+		<GrainAdditions>14# Base Pale Malt</GrainAdditions>
+		<HopAdditions>1oz. Jerrylo</HopAdditions>
+		<SampleImagePath></SampleImagePath>
+	</Recipe>
+	<Recipe>
+		<Id>3</Id>
+		<Name>Peninsula RyePA</Name>
+		<Style>RYE</Style>
+		<PercentABV>6.5</PercentABV>
+		<IBU>62</IBU>
+		<GrainAdditions>5# Rye Malt</GrainAdditions>
+		<HopAdditions>3# Fresh Cascade</HopAdditions>
+		<SampleImagePath></SampleImagePath>
+	</Recipe>
+	<Recipe>
+		<Id>4</Id>
+		<Name>Just Around Rye</Name>
+		<Style>RYE</Style>
+		<PercentABV>7.1</PercentABV>
+		<IBU>82</IBU>
+		<GrainAdditions>5# Rye Malt</GrainAdditions>
+		<HopAdditions>1oz. Autralian Galaxy</HopAdditions>
+		<SampleImagePath></SampleImagePath>
+	</Recipe>
+	<Recipe>
+		<Id>5</Id>
+		<Name>Boilermaker Stout</Name>
+		<Style>STOUT</Style>
+		<PercentABV>9.1</PercentABV>
+		<IBU>27</IBU>
+		<GrainAdditions>6 lbs - Pale Malt</GrainAdditions>
+		<HopAdditions>2oz. Kent-Goldings</HopAdditions>
+		<SampleImagePath></SampleImagePath>
+	</Recipe>
+	<Recipe>
+		<Id>6</Id>
+		<Name>Shutdown Stout</Name>
+		<Style>STOUT</Style>
+		<PercentABV>6.1</PercentABV>
+		<IBU>29</IBU>
+		<GrainAdditions>1 lbs - Black Barle</GrainAdditions>
+		<HopAdditions>0.5 oz - Pacific Jade</HopAdditions>
+		<SampleImagePath></SampleImagePath>
+	</Recipe>
+</Recipes>

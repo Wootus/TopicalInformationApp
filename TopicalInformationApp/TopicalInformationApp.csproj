@@ -150,6 +150,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RecipeAdminController.cs" />
+    <Compile Include="Controllers\RecipeUserController.cs" />
+    <Compile Include="DAL\DataSettings.cs" />
+    <Compile Include="DAL\IRecipeDataService.cs" />
+    <Compile Include="DAL\IRecipeRepository.cs" />
+    <Compile Include="DAL\RecipeRepository.cs" />
+    <Compile Include="DAL\RecipeXmlDataService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -158,8 +165,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ErgoBrewingDB.xml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.min_org.css" />
+    <Content Include="Content\bootstrap_org.css" />
+    <Content Include="Content\lavish-bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -197,11 +208,15 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="Views\Home\View.cshtml" />
+    <Content Include="Views\RecipeUser\Index.cshtml" />
+    <Content Include="Views\RecipeUser\Details.cshtml" />
+    <Content Include="Views\RecipeAdmin\Index.cshtml" />
+    <Content Include="Views\RecipeAdmin\Create.cshtml" />
+    <Content Include="Views\RecipeAdmin\Delete.cshtml" />
+    <Content Include="Views\RecipeAdmin\Edit.cshtml" />
+    <Content Include="Views\RecipeAdmin\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

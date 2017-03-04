@@ -9,7 +9,7 @@ namespace TopicalInformationApp.Models
 	[XmlRoot("Recipes")]
 	public class Recipes
 	{
-		[XmlElement("Brewery")]
+		[XmlElement("Recipe")]
 		public List<Recipe> recipes;
 	}
 }
