@@ -166,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\ErgoBrewingDB.xml" />
+    <Content Include="App_Data\ErgoBrewingDB.bak.xml" />
+    <Content Include="App_Data\Images\1.png" />
+    <Content Include="App_Data\Images\2.jpg" />
+    <Content Include="App_Data\Images\3.jpg" />
+    <Content Include="App_Data\Images\4.jpg" />
+    <Content Include="App_Data\Images\5.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.min_org.css" />
@@ -175,6 +181,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="README.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -209,11 +216,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\RecipeUser\Index.cshtml" />
-    <Content Include="Views\RecipeUser\Details.cshtml" />
     <Content Include="Views\RecipeAdmin\Index.cshtml" />
     <Content Include="Views\RecipeAdmin\Create.cshtml" />
     <Content Include="Views\RecipeAdmin\Delete.cshtml" />
     <Content Include="Views\RecipeAdmin\Edit.cshtml" />
+    <Content Include="Views\RecipeUser\Details.cshtml" />
     <Content Include="Views\RecipeAdmin\Details.cshtml" />
   </ItemGroup>
   <ItemGroup />

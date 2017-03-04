@@ -8,7 +8,7 @@
 		<IBU>65</IBU>
 		<GrainAdditions>10# Base Pale Malt</GrainAdditions>
 		<HopAdditions>1oz. US Warrior</HopAdditions>
-		<SampleImagePath>/App_Data/Images/1.png</SampleImagePath>
+		<SampleImagePath></SampleImagePath>
 	</Recipe>
 	<Recipe>
 		<Id>2</Id>
@@ -18,7 +18,7 @@
 		<IBU>77</IBU>
 		<GrainAdditions>14# Base Pale Malt</GrainAdditions>
 		<HopAdditions>1oz. Jerrylo</HopAdditions>
-		<SampleImagePath>/App_Data/Images/2.jpg</SampleImagePath>
+		<SampleImagePath></SampleImagePath>
 	</Recipe>
 	<Recipe>
 		<Id>3</Id>
@@ -28,7 +28,7 @@
 		<IBU>62</IBU>
 		<GrainAdditions>5# Rye Malt</GrainAdditions>
 		<HopAdditions>3# Fresh Cascade</HopAdditions>
-		<SampleImagePath>/App_Data/Images/3.jpg</SampleImagePath>
+		<SampleImagePath></SampleImagePath>
 	</Recipe>
 	<Recipe>
 		<Id>4</Id>
@@ -38,7 +38,7 @@
 		<IBU>82</IBU>
 		<GrainAdditions>5# Rye Malt</GrainAdditions>
 		<HopAdditions>1oz. Autralian Galaxy</HopAdditions>
-		<SampleImagePath>/App_Data/Images/4.jpg</SampleImagePath>
+		<SampleImagePath></SampleImagePath>
 	</Recipe>
 	<Recipe>
 		<Id>5</Id>
@@ -48,7 +48,7 @@
 		<IBU>27</IBU>
 		<GrainAdditions>6 lbs - Pale Malt</GrainAdditions>
 		<HopAdditions>2oz. Kent-Goldings</HopAdditions>
-		<SampleImagePath>/App_Data/Images/5.jpg</SampleImagePath>
+		<SampleImagePath></SampleImagePath>
 	</Recipe>
 	<Recipe>
 		<Id>6</Id>
@@ -58,6 +58,6 @@
 		<IBU>29</IBU>
 		<GrainAdditions>1 lbs - Black Barle</GrainAdditions>
 		<HopAdditions>0.5 oz - Pacific Jade</HopAdditions>
-		<SampleImagePath>/App_Data/Images/2.jpg</SampleImagePath>
+		<SampleImagePath></SampleImagePath>
 	</Recipe>
 </Recipes>

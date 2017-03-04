@@ -4,7 +4,7 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details for Standard User</h2>
+<h2>Details</h2>
 
 <div>
     <h4>Recipe</h4>
@@ -68,6 +68,10 @@
 
     </dl>
 </div>
+@if(Model.SampleImagePath != null && Model.SampleImagePath != "")
+{
+	<img src="~@Url.Content(Model.SampleImagePath)" width="200" height="200" />
+}
 <p>
     @Html.ActionLink("Back to List", "Index")
 </p>

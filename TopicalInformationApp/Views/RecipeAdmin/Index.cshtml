@@ -4,25 +4,46 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Administrator Mode</h2>
+
+@using(Html.BeginForm( ))
+{
+	<div id="FilterSearch" class="form-horizontal">
+		<div class="form-group">
+			@Html.Label("Search by Beer Name", htmlAttributes: new { @class = "control-label col-md-2" })
+			@Html.TextBox("searchCriteria", null, new { @class = "form-control" })
+		</div>
+		<div class="form-group">
+			@Html.Label("Filter by Beer Style", htmlAttributes: new { @class = "control-label col-md-2" })
+			@Html.DropDownList("styleFilter",
+					new SelectList(@ViewBag.Styles),
+					"All Styles",
+					new { @class = "form-control" })
+		</div>
+		<div class="form-group">
+			<input type="submit" value="Find Recipes" class="btn col-md-2 col-md-offset-2" />
+			<input type="button" value="Reset Recipe List" onclick="location.href='@Url.Action("Index", "RecipeAdmin")'" class="btn col-md-2 col-md-offset-2" />
+		</div>
+	</div>
+}
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Style)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PercentABV)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IBU)
-        </th>
+		<th>
+			@Html.ActionLink(Html.DisplayNameFor(Model => Model.Name).ToString( ), "Index", new { sort = "Name" })
+		</th>
+		<th>
+			@Html.ActionLink(Html.DisplayNameFor(Model => Model.Style).ToString( ), "Index", new { sort = "Style" })
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.PercentABV)
+		</th>
+		<th>
+			@Html.ActionLink(Html.DisplayNameFor(Model => Model.IBU).ToString( ), "Index", new { sort = "IBU" })
+		</th>
         <th>
             @Html.DisplayNameFor(model => model.GrainAdditions)
         </th>

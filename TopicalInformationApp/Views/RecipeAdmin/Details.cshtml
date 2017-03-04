@@ -68,6 +68,13 @@
 
     </dl>
 </div>
+<div>
+	@if(Model.SampleImagePath != null && Model.SampleImagePath != "")
+	{
+		<img src="~@Url.Content(Model.SampleImagePath)" width="200" height="200" />
+	}
+	
+</div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")

@@ -24,12 +24,13 @@ namespace TopicalInformationApp.DAL
 			}
 		}
 
-		//Methods
+		//Method to select all recipes from persistance
 		public IEnumerable<Recipe> SelectAll( )
 		{
 			return _recipes;
 		}
 
+		//Method to select one recipe based on ID from persistance
 		public Recipe SelectOne(int id)
 		{
 			Recipe selectedRecipe = _recipes.Where(p => p.Id == id).FirstOrDefault( );
@@ -37,25 +38,52 @@ namespace TopicalInformationApp.DAL
 			return selectedRecipe;
 		}
 
-		public void Delete(int id)
-		{
-			throw new NotImplementedException( );
-		}
-
+		//method to add a recipe to percistance
 		public void Insert(Recipe recipe)
 		{
-			throw new NotImplementedException( );
+			_recipes.Add(recipe);
+
+			Save( );
 		}
-
-
-
-		
 
 		public void Update(Recipe recipe)
 		{
-			throw new NotImplementedException( );
+			//temp var of the original recipe
+			var oldRecipe = _recipes.Where(b => b.Id == recipe.Id).FirstOrDefault( );
+
+			if(oldRecipe != null)
+			{
+				_recipes.Remove(oldRecipe);
+				_recipes.Add(recipe);
+			}
+
+			Save( );
 		}
 
+		//Method to remove a recipe from persistance
+		public void Delete(int id)
+		{
+			//temp var of recipe to be removed
+			var recipe = _recipes.Where(b => b.Id == id).FirstOrDefault( );
+
+			if(recipe != null)
+			{
+				_recipes.Remove(recipe);
+			}
+
+			Save( );
+		}
+
+		//Method called when saving to persistance
+		public void Save( )
+		{
+			RecipeXmlDataService recipeXmlDataService = new RecipeXmlDataService( );
+
+			using(recipeXmlDataService)
+			{
+				recipeXmlDataService.Write(_recipes);
+			}
+		}
 		public void Dispose( )
 		{
 			_recipes = null;
